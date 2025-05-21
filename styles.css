@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e0f2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn.student {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn.student:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.btn.teacher {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn.teacher:hover {
+  background-color: #047857;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #444;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
