@@ -96,3 +96,29 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+body { font-family: Arial, sans-serif; background: #f0f2f5; margin: 0; padding: 0; color: #333; }
+
+.container { width: 90%; max-width: 500px; margin: 50px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); text-align: center; }
+
+h1, h2 { margin-bottom: 20px; color: #0d47a1; }
+
+input[type="text"], input[type="password"], textarea { width: 100%; padding: 12px 15px; margin: 12px 0 20px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; resize: vertical; transition: border 0.3s ease; }
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus { border-color: #0d47a1; outline: none; }
+
+textarea { min-height: 100px; }
+
+button, .btn { background-color: #0d47a1; color: white; padding: 14px 28px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; transition: background-color 0.3s ease; }
+
+button:hover, .btn:hover { background-color: #0b3c91; }
+
+.button-group { display: flex; justify-content: space-around; margin-top: 30px; }
+
+.request { text-align: left; border: 1px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 8px; background-color: #f9f9f9; }
+
+form { text-align: left; }
+
+form input, form textarea { margin-bottom: 15px; }
+
+form button { width: 100%; }
+
