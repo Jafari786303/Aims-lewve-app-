@@ -1,75 +1,72 @@
-/* Reset and base */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #e6f0ff;
+  font-family: Arial, sans-serif;
+  background: #f4f7f8;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #333;
 }
 
 .container {
-  width: 100%;
-  max-width: 480px;
-  background: #fff;
-  margin: 60px auto;
-  padding: 40px 35px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-h2 {
-  margin-bottom: 30px;
-  color: #1a237e;
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+h1, h2 {
+  margin-bottom: 20px;
+  color: #0d47a1;
 }
 
 input[type="text"],
+input[type="password"],
 textarea {
-  border: 1.8px solid #cfd8dc;
-  border-radius: 8px;
-  padding: 14px 18px;
-  margin-bottom: 25px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
   resize: vertical;
 }
 
-input[type="text"]:focus,
-textarea:focus {
-  border-color: #3949ab;
-  outline: none;
-  box-shadow: 0 0 8px rgba(57, 73, 171, 0.4);
-}
-
 textarea {
-  min-height: 110px;
+  min-height: 80px;
 }
 
-button {
-  background-color: #3949ab;
+button, .btn {
+  background-color: #0d47a1;
   color: white;
-  padding: 16px 0;
+  padding: 12px 25px;
   border: none;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1.1rem;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
-  box-shadow: 0 4px 15px rgba(57, 73, 171, 0.4);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #303f9f;
-  box-shadow: 0 6px 18px rgba(48, 63, 159, 0.6);
+button:hover, .btn:hover {
+  background-color: #094a8f;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.request {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 5px;
+  background-color: #fafafa;
 }
