@@ -1,124 +1,75 @@
+/* Reset and base */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6f0ff;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #e0f2fe;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  color: #222;
 }
 
 .container {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  margin: 60px auto;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
-  animation: slideIn 0.5s ease;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.logo {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #1e3a8a;
-}
-
-.subtitle {
+h2 {
   margin-bottom: 30px;
-  color: #555;
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 
-.button-group {
+form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  text-align: left;
 }
 
-.btn {
-  padding: 12px;
+input[type="text"],
+textarea {
+  border: 1.8px solid #cfd8dc;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 14px 18px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-weight: 500;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #3949ab;
+  outline: none;
+  box-shadow: 0 0 8px rgba(57, 73, 171, 0.4);
+}
+
+textarea {
+  min-height: 110px;
+}
+
+button {
+  background-color: #3949ab;
+  color: white;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 4px 15px rgba(57, 73, 171, 0.4);
 }
 
-.btn.student {
-  background-color: #2563eb;
-  color: white;
+button:hover {
+  background-color: #303f9f;
+  box-shadow: 0 6px 18px rgba(48, 63, 159, 0.6);
 }
-
-.btn.student:hover {
-  background-color: #1e40af;
-  transform: scale(1.05);
-}
-
-.btn.teacher {
-  background-color: #10b981;
-  color: white;
-}
-
-.btn.teacher:hover {
-  background-color: #047857;
-  transform: scale(1.05);
-}
-
-footer {
-  margin-top: 30px;
-  font-size: 12px;
-}
-
-footer a {
-  color: #444;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-body { font-family: Arial, sans-serif; background: #f0f2f5; margin: 0; padding: 0; color: #333; }
-
-.container { width: 90%; max-width: 500px; margin: 50px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); text-align: center; }
-
-h1, h2 { margin-bottom: 20px; color: #0d47a1; }
-
-input[type="text"], input[type="password"], textarea { width: 100%; padding: 12px 15px; margin: 12px 0 20px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; resize: vertical; transition: border 0.3s ease; }
-
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus { border-color: #0d47a1; outline: none; }
-
-textarea { min-height: 100px; }
-
-button, .btn { background-color: #0d47a1; color: white; padding: 14px 28px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; transition: background-color 0.3s ease; }
-
-button:hover, .btn:hover { background-color: #0b3c91; }
-
-.button-group { display: flex; justify-content: space-around; margin-top: 30px; }
-
-.request { text-align: left; border: 1px solid #ddd; padding: 15px; margin: 20px 0; border-radius: 8px; background-color: #f9f9f9; }
-
-form { text-align: left; }
-
-form input, form textarea { margin-bottom: 15px; }
-
-form button { width: 100%; }
-
